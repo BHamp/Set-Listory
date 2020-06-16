@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(./assets/bg.jpeg);
+  background-size: cover;
+    /* background-position: center; */
+  font-family: sans-serif;
+  color: white;
+}
+
+.login {
+  height: 420px;
+  width: 320px;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.userBox {
+  background-color: blueviolet;
+  width: 125px;
+  height: 125px;
+  border-radius: 15%;
+  position: absolute;
+  top: -27%;
+  left: calc(50% - 65px);
+  border: 3px solid black;
+}
+
+.user {
+  height: 100px;
+  width: 100px;
+  margin-top: .75rem;
+  margin-left: .75rem;
+}
+
+h1 {
+  margin-top: 20px;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.login p{
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.login input {
+  width: 90%;
+  margin-left: .75rem;
+  margin-bottom: 20px;
+}
+
+.login input[type='text'], input[type='password']{
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.login input[type='submit']{
+  margin-top: 90px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login input[type='submit']:hover{
+  background-color: violet;
+  color: black;
+}
+
+.login a{
+  margin: 6rem;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.login a:hover{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+}
+
+.register {
+  height: 420px;
+  width: 320px;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.register h1 {
+  margin-top: 20px;
+  padding: 0 0 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.register p{
+  margin-left: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.register input {
+  width: 90%;
+  margin-left: .75rem;
+  margin-bottom: 20px;
+}
+
+.register input[type='text'], input[type='password'], input[type='email']{
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.register input[type='submit']{
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.register input[type='submit']:hover{
+  background-color: violet;
+  color: black;
+}
+
+.register a{
+  margin: 6rem;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgray;
+}
+
+.register a:hover{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+}
+
+.primary-app {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.titleBar {
+  background-color:rgb(49, 49, 49);
+  border-bottom: 1px solid slategray;
+}
+
+.titleBar h1{
+  margin:10px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "footer footer footer footer footer footer";
+  grid-gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.app-grid > div {
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header {
+  grid-area: header;
+  background-color:rgb(49, 49, 49);
+  border-bottom: 1px solid slategray;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.menu {
+  grid-area: menu;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  height: 40rem;
+  background-color:rgb(49, 49, 49);
+  overflow-y: scroll;
+}
+.footer {
+  grid-area: footer;
+}
+
+.main-content {
+  margin-top: 10rem;
+  grid-area: main;
+  background-color:rgb(49, 49, 49);
+  margin-right: 2rem;
+}
+
+.footer {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  grid-area: footer;
+  background-color:rgb(49, 49, 49);
+}
+
+.overlay {
+  height: 420px;
+  width: 320px;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  z-index: 10;
+  text-align: center;
+}
+
+.overlay input[type='text']{
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.overlay input[type='submit']{
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay input[type='submit']:hover{
+  background-color: violet;
+  color: black;
+}
+
+.exit {
+  text-align: right;
+  margin-right: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.setlist {
+  list-style-type: none;
+  text-align: left;
+  font-size: 16px;
+}
+
+.listory {
+  list-style-type: none;
+  text-align: left;
+  font-size: 16px;
+}
+
+.resultsbox {
+  height: 500px;
+  width: 400px;
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  z-index: 20;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.results {
+  list-style-type: none;
+  text-align: left;
+  font-size: 16px;
+}
+
+.listItem {
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.listItem:hover {
+  background-color: lightgrey;
+  color: blueviolet;
+}
+
+.listItem h3{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.close {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: violet;
+  color: black;
+}
